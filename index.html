@@ -6,12 +6,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: Montserrat;
-    }
-  </style>
-  <!-- <link rel="stylesheet" href="style.css"> -->
+  <link rel="stylesheet" href="style.css">
   <!-- <link href="responsive.css"> -->
 </head>
 <body>
@@ -21,28 +16,32 @@
   <div class="main_nav">
     <nav>
       <ul>
-        <li><a href="#header">HOME</a></li>
-        <li><a href="#about">ABOUT</a></li>
-        <li><a href="#skills">SKILLS</a></li>
-        <li><a href="#gallery">GALLERY</a></li>
-        <li><a href="#faqs">FAQS</a></li>
-        <li><a href="#contact">CONTACT</a></li>
+        <a class="head-link" href="#header">HOME</a>
+        <a class="head-link" href="#about">ABOUT</a>
+        <a class="head-link" href="#skills">SKILLS</a>
+        <a class="head-link" href="#gallery">GALLERY</a>
+        <a class="head-link" href="#faqs">FAQS</a>
+        <a class="head-link" href="#contact">CONTACT</a>
       </ul>
     </nav>
   </div>
 </header>
 
 <!-- Main Header --> 
-<section id="header" class="header">
-  <h5>WELCOME!</h5>
-  <p class="diff-color">MY NAME IS</p>
-  <h1>Jillian Ped</h1>
-  <h4>INTERESTED IN ALL THINGS<span class="creative">creative</span></h4>
-  <p class="diff-color">ART DIRECTION | GRAPHIC DESIGN</p>
+<section id="header">
+  <div class="header">
+    <h5>WELCOME!</h5>
+    <p class="diff-color" class="spacing">MY NAME IS</p>
+    <h1>Jillian Ped</h1>
+    <h4>INTERESTED IN ALL THINGS<span class="creative">creative</span></h4>
+    <p class="diff-color">ART DIRECTION | GRAPHIC DESIGN</p>
+  </div>
+  
 </section>
 
 <!-- Wavy Divider 1 -->
 <section id="divider_1" class="white-wavy">
+  <img width="100%" src="images/wavy-white.svg" alt="Section Divider">
 </section>
 
 <!-- About Section --> 
@@ -50,9 +49,9 @@
   <div class="about-container">
     <img width="300" src="images/self portrait.JPG" class="portrait" alt="Jillian's Headshot">
     <div class="about-column">
-      <h2>ABOUT ME</h2>
+      <h2 class="dark">ABOUT ME</h2>
       <h2 class="aloha">Aloha!</h2>
-      <p>I'm Jillian Ped and I was born and raised in Maui, Hawai'i and am now living in San Diego, California. I am a 4th year undergraduate student currently studying advertising/art direction and graphic design at San Diego State University. I am an aspiring advertising professional offering great initiative, an organized nature, a positive attitude and a passion for creativity.</p>
+      <p class="dark">I'm Jillian Ped and I was born and raised in Maui, Hawai'i and am now living in San Diego, California. I am a 4th year undergraduate student currently studying advertising/art direction and graphic design at San Diego State University. I am an aspiring advertising professional offering great initiative, an organized nature, a positive attitude and a passion for creativity.</p>
     </div>
   </div>
 </section>
@@ -67,35 +66,37 @@
    <h2>SKILLS</h2>
    <div class="skill-group">
     <div class="individual">
-      <img width="100" src="images/illustrator.png" class="icon" alt="Illustrator Icon">
+      <img width="126" src="images/illustrator.png" class="icon" alt="Illustrator Icon">
       <span class="skills-type">ILLUSTRATOR</span>
     </div>
     <div class="individual">
-      <img width="100" src="images/photoshop.png" class="icon" alt="Photoshop Icon">
+      <img width="126" src="images/photoshop.png" class="icon" alt="Photoshop Icon">
       <span class="skills-type">PHOTOSHOP</span>
     </div>
     <div class="individual">
-      <img width="100" src="images/indesign.png" class="icon" alt="Indesign Icon">
+      <img width="126" src="images/indesign.png" class="icon" alt="Indesign Icon">
       <span class="skills-type">INDESIGN</span>
     </div>
     <div class="individual">
-      <img width="100" src="images/figma.png" class="icon" alt="Figma Icon">
+      <img width="126" src="images/figma.png" class="icon" alt="Figma Icon">
       <span class="skills-type">FIGMA</span>
     </div>
+   </div>
+   <div class="skill-group2">
     <div class="individual">
-      <img width="100" src="images/solving.png" class="icon" alt="Problem Solving Icon">
+      <img width="126" src="images/solving.png" class="icon" alt="Problem Solving Icon">
       <span class="skills-type">PROBLEM SOLVING</span>
     </div>
     <div class="individual">
-      <img width="100" src="images/detail orientation.png" class="icon" alt="Detail Orientation Icon">
+      <img width="126" src="images/detail orientation.png" class="icon" alt="Detail Orientation Icon">
       <span class="skills-type">DETAIL ORIENTATION</span>
     </div>
     <div class="individual">
-      <img width="100" src="images/people.png" class="icon" alt="Teamwork Icon">
-      <span class="skills-type">TEAMWORK</span>
+      <img width="126" src="images/people.png" class="icon" alt="Teamwork Icon">
+      <span class="skills-type">TEAM WORK</span>
     </div>
     <div class="individual">
-      <img width="100" src="images/comm.png" class="icon" alt="Communication Icon">
+      <img width="126" src="images/comm.png" class="icon" alt="Communication Icon">
       <span class="skills-type">COMMUNICATION</span>
     </div>
    </div>
@@ -262,28 +263,32 @@
 
 <!-- Wavy Divider 3 -->
 <section id="divider_3" class="white-wavy">
+  <img width="100%" src="images/white wavy- no shadow.svg" alt="Section Divider">
 </section>
 
 <!-- FAQS Section -->  
 <section id="faqs">
   <div class="faq-container">
-    <h2>FAQS</h2>
-    <div class="drop-down">
-      <h3>When will you be graduating from SDSU?</h3>
-      <p>I will be graduating from SDSU in May of 2024 with a B.A. in Advertising with a minor in Art - Graphic Design.</p>
+    <h2 class="dark">FAQS</h2>
+    <div class="drop-downs-container">
+      <div class="drop-down">
+        <h3 class="dark">WHEN WILL YOU BE GRADUATING FROM SDSU?</h3>
+        <p class="dark">I will be graduating from SDSU in May of 2024 with a B.A. in Advertising with a minor in Art - Graphic Design.</p>
+      </div>
+      <div class="drop-down">
+        <h3 class="dark">WHAT DO YOU HAVE PLANNED FOR AFTER GRADUATION?</h3>
+        <p class="dark">After graduation, I will be taking an exciting family trip to Japan then going back home to Maui for the summer. After that, I plan on returning to San Diego to work full-time.</p>
+      </div>
+      <div class="drop-down">
+        <h3 class="dark">WHAT WAS YOUR FAVORITE CLASS YOU TOOK AT SDSU?</h3>
+       <p class="dark">My favorite class I took at SDSU is Self Defense for Women. In this class we learn the different ways to defend ourselves in the different situations we may find ourselves in. Learning all of the different techniques and practicing it with your classmates was so much fun, especially since the environment was so welcoming and empowering. I would say that my favorite technique that I learned was a hip throw.</p>
+      </div>
+      <div class="drop-down">
+        <h3 class="dark">WHAT WORK ARE YOU MOST PROUD PRODUCING AT SDSU?</h3>
+        <p class="dark">The work that I'm most proud of producing at SDSU is my "Kaiāulu" project from Typography II. Even though this project was extremely stressful and brought a lot of challenges with print vs online, I learned so much about the different programs I was using and overcame those challenges. This project pushed me and helped me grow as a designer.</p>
+      </div>
     </div>
-    <div class="drop-down">
-      <h3>What do you have planned for after graduation?</h3>
-      <p>After graduation, I will be taking an exciting family trip to Japan then going back home to Maui for the summer. After that, I plan on returning to San Diego to work full-time.</p>
-    </div>
-    <div class="drop-down">
-      <h3>What was your favorite class you took at SDSU?</h3>
-      <p>My favorite class I took at SDSU is Self Defense for Women. In this class we learn the different ways to defend ourselves in the different situations we may find ourselves in. Learning all of the different techniques and practicing it with your classmates was so much fun, especially since the environment was so welcoming and empowering. I would say that my favorite technique that I learned was a hip throw.</p>
-    </div>
-    <div class="drop-down">
-      <h3>What work are you most proud producing at SDSU?</h3>
-      <p>The work that I'm most proud of producing at SDSU is my "Kaiāulu" project from Typography II. Even though this project was extremely stressful and brought a lot of challenges with print vs online, I learned so much about the different programs I was using and overcame those challenges. This project pushed me and helped me grow as a designer.</p>
-    </div>
+    
   </div>
 </section>
 
@@ -321,7 +326,7 @@
 
 <footer>
   <div class="container">
-      <p>Copywrite © 2024, All Rights Reserved</p>
+      <p class="dark">Copywrite © 2024, All Rights Reserved</p>
   </div>
 </footer>
 

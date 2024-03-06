@@ -1,20 +1,229 @@
 /* CSS GOES HERE */
 
+header {
+    background: #F9F5E7;
+    box-shadow: 0px 6px 9.4px 0px rgba(147, 96, 41, 0.50);
+    padding: 10px;
+}
+
+a.head-link {
+    text-decoration: none;
+    color: #653603;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
 body {
     margin: 0;
     padding: 0;
     border: 0;
     font-size: 100%;
-    font-family: Montserrat;
-    font: inherit;
     vertical-align: baseline;
+    font-family: Montserrat;
+    background-color: #FBF9F8;
 }
+
+h1 {
+    font-family: 'Better Yesterday';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 200px;
+    line-height: 0px;
+    color: #EEB669;
+    text-shadow: 2px 4px 0px #936029;
+    text-align: center;
+}
+
+h2 {
+    color: #936029;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 18px;
+    text-align: center;
+}
+
+h2.aloha {
+    text-align: center;
+    font-family: "Better Yesterday";
+    font-size: 128px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 0;
+    letter-spacing: normal;
+    color: #653603;
+}
+
+h3 {
+    color: #936029;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.96px;
+}
+
+h4 {
+    color: #936029;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 0;
+    text-align: center;
+}
+
+h5 {
+    color: #936029;
+    font-size: 29px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 0;
+    letter-spacing: 25.52px;
+    text-align: center;
+}
+
+h2.dark {
+    color: #653603;
+}
+
+h3.dark {
+    color: #653603;
+}
+
+p.dark {
+    color: #653603;
+}
+
+p {
+    color: #936029;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+p.diff-color {
+    color: #CB8B5D;
+    line-height: 0;
+    text-align: center;
+    letter-spacing: normal;
+}
+
+p.spacing {
+    letter-spacing: 9.36px;
+    line-height: 0;
+}
+
+span.creative {
+    width: 206px;
+    height: 147px;
+    font-family: 'Better Yesterday';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 128px;
+    line-height: 0; 
+    color: #DFBEA5;
+    text-shadow: 2px 4px 0px #936029;
+    padding-left: 20px
+}
+
+div.about-column p {
+    line-height: 148%;
+}
+
+span.skills-type {
+    color: #936029;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.96px;
+    text-align: center;
+}
+
 section {
     padding: 60px 40px;
 }
 
-section:nth-child(even) {
-    background-color: #f2f2f2;
+.white-wavy {
+    width: 100%;
+    height: 189.26px;
+    left: -34px;
+    top: 701px;
+    padding: 0px;
+
+}
+
+section#about {
+    background-color: #EFD8C8;
+    margin-top: -150px;
+}
+
+div.about-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 4px;
+}
+
+div.about-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 47px;
+    isolation: isolate;
+    margin-top: 150px;
+}
+
+div.skill-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 0px;
+    padding-bottom: 80px;
+    padding-top: 50px;
+}
+
+div.skill-group2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 0px;
+}
+
+div.individual {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+div.drop-down {
+    border-radius: 40px;
+    border: 4px solid #653603;
+    padding-top: 30px;
+    padding-left: 60px;
+    padding-bottom: 30px;
+    padding-right: 80px;
+}
+
+div.drop-downs-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+div.faq-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
 }
 
 .container {
@@ -29,11 +238,11 @@ nav ul {
     display: flex;
     flex-flow: row;
     justify-content: center;
-    gap: 10px;
+    gap: 50px;
 }
 
 footer {
-    background-color: #000;
+    background: #EEB669;
     color: #fff;
     padding: 10px;
 }
