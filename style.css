@@ -10,7 +10,7 @@ a.head-link {
     text-decoration: none;
     color: #653603;
     font-family: Montserrat;
-    font-size: 18px;
+    font-size: 15px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -154,13 +154,19 @@ section {
     left: -34px;
     top: 701px;
     padding: 0px;
+}
 
+.dark-wavy {
+    width: 100%;
+    margin-top: -500px;
+    padding: 0px;
 }
 
 section#about {
     background-color: #EFD8C8;
     margin-top: -150px;
 }
+
 
 div.about-column {
     display: flex;
@@ -203,6 +209,19 @@ div.individual {
     gap: 30px;
 }
 
+div.project-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 50px;
+    padding-bottom: 50px;
+}
+
+section#faqs {
+    background-color: #EFD8C8;
+    margin-top: -150px;
+}
+
 div.drop-down {
     border-radius: 40px;
     border: 4px solid #653603;
@@ -224,6 +243,19 @@ div.faq-container {
     flex-direction: column;
     align-items: center;
     gap: 40px;
+    margin: 100px;
+}
+
+section#contact {
+    background: linear-gradient(213deg, rgba(238, 182, 105, 0.50) -28.24%, #F9F5E7 52.98%);
+    margin-top: -150px;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px
 }
 
 .container {
