@@ -183,6 +183,14 @@
         margin-top: 100px;
     }
 
+    .contact-form {
+        padding: 70px 90px;
+    }
+
+    .button-primary {
+        font-size: 18px;
+    }
+
     .dark-light-wavy {
         filter: drop-shadow(0px 25px 12px rgba(147, 96, 41, 0.50));
     }
@@ -399,5 +407,23 @@
         margin-top: 30px;
         align-items: center;
     }
+
+    .contact-form {
+        max-width: 286px;
+        padding: 40px;
+        border: 3px solid #936029;
+        border-radius: 50px;
+    }
+
+    .button-primary {
+        font-size: 12px;
+        padding: 10px 20px;
+        letter-spacing: 5px;
+    }
+
+    .contact-row {
+        gap: 20px;
+    }
+
 
 }
