@@ -449,6 +449,50 @@ ul.popout-column {
     flex-direction: column;
 }
 
+label {
+    color: #936029;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.96px;
+}
+
+.contact-form {
+    border-radius: 93px;
+    border: 5px solid #936029;
+    padding: 98px 115px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    max-width: 1085px;
+}
+
+.contact-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 60px;
+    max-width: 800px;
+}
+
+.button-primary {
+    background-color: #936029;
+    border: none;
+    color: #FBF9F8;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 9.84px;
+    align-items: center;
+    padding: 20px 80px;
+    border-radius: 40px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
 footer {
     background: #EEB669;
     color: #fff;

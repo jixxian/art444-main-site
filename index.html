@@ -9,6 +9,35 @@
   <link rel="stylesheet" href="style.css">
   <link href="responsive.css">
   <link rel="stylesheet" href="responsive.css">
+  <style>
+    input[type=text] {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      box-sizing: border-box;
+      border: none;
+      border-bottom: 3px solid #936029;
+      background-color: transparent;
+    }
+    input[type=email] {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      box-sizing: border-box;
+      border: none;
+      border-bottom: 3px solid #936029;
+      background-color: transparent;
+    }
+    textarea {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      box-sizing: border-box;
+      border: none;
+      border-bottom: 3px solid #936029;
+      background-color: transparent;
+    }
+  </style>
 </head>
 <body>
 
@@ -443,21 +472,23 @@
 <section id="contact">
   <div class="contact-container">
     <h2>LET'S GET IN TOUCH!</h2>
-    <form>
-      <div>
-        <label for="exampleRecipientInput">FIRST NAME</label>
-        <input class="u-full-width" type="text">
+    <form class="contact-form">
+      <div class="contact-row">
+        <div>
+          <label for="fname">FIRST NAME</label>
+          <input class="u-full-width" type="text">
+        </div>
+        <div>
+          <label for="lname">LAST NAME</label>
+          <input class="u-full-width" type="text">
+        </div>
       </div>
       <div>
-        <label for="exampleRecipientInput">LAST NAME</label>
-        <input class="u-full-width" type="text">
-      </div>
-      <div>
-        <label for="exampleEmailInput">EMAIL</label>
+        <label for="emailinput">EMAIL</label>
         <input class="u-full-width" type="email">
       </div>
       <div>
-        <label for="exampleMessage">WRITE A MESSAGE</label>
+        <label for="messageinput">WRITE A MESSAGE</label>
         <textarea class="u-full-width"></textarea>
       </div>
       <input class="button-primary" type="submit" value="SUBMIT">
