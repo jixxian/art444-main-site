@@ -61,12 +61,12 @@
 
 <div id="mymenu" class="mobile-menu-popout">
   <ul class="popout-column">
-    <a class="popout-link" href="#header">HOME</a>
-    <a class="popout-link" href="#about">ABOUT</a>
-    <a class="popout-link" href="#skills">SKILLS</a>
-    <a class="popout-link" href="#gallery">GALLERY</a>
-    <a class="popout-link" href="#faqs">FAQS</a>
-    <a class="popout-link" href="#contact">CONTACT</a>
+    <a onclick="myMenu()" class="popout-link" href="#header">HOME</a>
+    <a onclick="myMenu()" class="popout-link" href="#about">ABOUT</a>
+    <a onclick="myMenu()" class="popout-link" href="#skills">SKILLS</a>
+    <a onclick="myMenu()" class="popout-link" href="#gallery">GALLERY</a>
+    <a onclick="myMenu()" class="popout-link" href="#faqs">FAQS</a>
+    <a onclick="myMenu()" class="popout-link" href="#contact">CONTACT</a>
   </ul>
 </div>
 
@@ -508,7 +508,6 @@
   function myMenu() {
     document.getElementById('mymenu').classList.toggle('open');
     document.getElementById('menuButton').classList.toggle('close');
-
   }
 
 </script>
