@@ -1,5 +1,10 @@
 /* CSS GOES HERE */
 
+@font-face {
+    font-family: 'BetterYesterday';
+    src: url('Better\ Yesterday.otf');
+}
+
 header {
     background: #F9F5E7;
     box-shadow: 0px 6px 9.4px 0px rgba(147, 96, 41, 0.50);
