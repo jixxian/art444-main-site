@@ -46,6 +46,10 @@ a.head-link {
     left: 0px;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .close {
     background-image: url(images/Close_round.svg);
 }
