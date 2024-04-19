@@ -40,7 +40,8 @@
     }
   </style>
 </head>
-<body>
+<body class="body">
+  
 
 <!-- Main Navigation --> 
 <header id="main_nav">
@@ -57,6 +58,8 @@
     </nav>
   </div>
 </header>
+
+<div onclick="darkMode()" id="DarkModeButton" class="dark-mode-button"></div>
 
 <div onclick="myMenu()" class="mobile-menu" id="menuButton"></div>
 
@@ -89,7 +92,7 @@
 
 <!-- Wavy Divider 1 -->
 <section id="divider_1" class="white-wavy">
-  <img width="100%" src="images/wavy-white.svg" alt="Section Divider">
+  <img id="divider-1-image" width="100%" src="images/wavy-white.svg" alt="Section Divider">
 </section>
 
 <!-- About Section --> 
@@ -100,7 +103,7 @@
         <img width="300" src="images/self portrait.png" class="portrait" alt="Jillian's Headshot">
         <div class="about-column">
           <h2 class="aloha">Aloha!</h2>
-          <p class="dark">I'm Jillian Ped and I was born and raised in Maui, Hawai'i and am now living in San Diego, California. I am a 4th year undergraduate student currently studying advertising/art direction and graphic design at San Diego State University. I am an aspiring advertising professional offering great initiative, an organized nature, a positive attitude and a passion for creativity.</p>
+          <p class="dark" class="light">I'm Jillian Ped and I was born and raised in Maui, Hawai'i and am now living in San Diego, California. I am a 4th year undergraduate student currently studying advertising/art direction and graphic design at San Diego State University. I am an aspiring advertising professional offering great initiative, an organized nature, a positive attitude and a passion for creativity.</p>
         </div>
       </div>
   </div>
@@ -108,7 +111,7 @@
 
 <!-- Wavy Divider 2 -->
 <section id="divider_2" class="dark-light-wavy">
-  <img width="100%" src="images/pink-cream-wavy.svg" alt="Section Divider">
+  <img id="divider-2-image" width="100%" src="images/pink-cream-wavy.svg" alt="Section Divider">
 </section>
 
 <!-- Skills Section -->  
@@ -117,46 +120,46 @@
    <h2>SKILLS</h2>
     <div class="skill-group">
       <div class="individual">
-        <img width="100" src="images/illustrator.png" class="icon" alt="Illustrator Icon">
+        <img id="illustrator-image" width="100" src="images/illustrator.png" class="icon" alt="Illustrator Icon">
         <span class="skills-type">ILLUSTRATOR</span>
       </div>
       <div class="individual">
-        <img width="100" src="images/photoshop.png" class="icon" alt="Photoshop Icon">
+        <img id="photoshop-image" width="100" src="images/photoshop.png" class="icon" alt="Photoshop Icon">
         <span class="skills-type">PHOTOSHOP</span>
       </div>
       <div class="individual">
-        <img width="100" src="images/indesign.png" class="icon" alt="Indesign Icon">
+        <img id="indesign-image" width="100" src="images/indesign.png" class="icon" alt="Indesign Icon">
         <span class="skills-type">INDESIGN</span>
       </div>
       <div class="individual">
-        <img width="100" src="images/figma.png" class="icon" alt="Figma Icon">
+        <img id="figma-image" width="100" src="images/figma.png" class="icon" alt="Figma Icon">
         <span class="skills-type">FIGMA</span>
       </div>
     </div>
     <div class="skill-group2">
       <div class="individual">
-        <img width="100" src="images/solving.png" class="icon" alt="Problem Solving Icon">
+        <img id="solving-image" width="100" src="images/solving.png" class="icon" alt="Problem Solving Icon">
         <div class="skills-type-wrap">
           <span class="skills-type">PROBLEM</span>
           <span class="skills-type">SOLVING</span>
         </div>
       </div>
       <div class="individual">
-        <img width="100" src="images/detail orientation.png" class="icon" alt="Detail Orientation Icon">
+        <img id="detail-image" width="100" src="images/detail-orientation.png" class="icon" alt="Detail Orientation Icon">
         <div class="skills-type-wrap">
           <span class="skills-type">DETAIL</span>
         <span class="skills-type">ORIENTATION</span>
         </div>
       </div>
       <div class="individual">
-        <img width="100" src="images/people.png" class="icon" alt="Teamwork Icon">
+        <img id="people-image" width="100" src="images/people.png" class="icon" alt="Teamwork Icon">
         <div class="skills-type-wrap">
           <span class="skills-type">TEAM</span>
         <span class="skills-type">WORK</span>
         </div>
       </div>
       <div class="individual">
-        <img width="100" src="images/comm.png" class="icon" alt="Communication Icon">
+        <img id="comm-image" width="100" src="images/comm.png" class="icon" alt="Communication Icon">
         <span class="skills-type">COMMUNICATION</span>
       </div>
     </div>
@@ -423,7 +426,7 @@
 
 <!-- Wavy Divider 3 -->
 <section id="divider_3" class="white-wavy">
-  <img width="100%" src="images/white wavy- no shadow.svg" alt="Section Divider">
+  <img id="divider-3-image" width="100%" src="images/white-wavy-no-shadow.svg" alt="Section Divider">
 </section>
 
 <!-- FAQS Section -->  
@@ -466,7 +469,7 @@
 
 <!-- Wavy Divider 4 -->
 <section id="divider_4" class="dark-wavy">
-  <img width="100%" src="images/pink-wavy.svg" alt="Section Divider">
+  <img id="divider-4-image" width="100%" src="images/pink-wavy.svg" alt="Section Divider">
 </section>
 
 <!-- Contact Section -->  
@@ -501,11 +504,248 @@
 
 <footer>
   <div class="container">
-      <p class="dark">Copywrite © 2024, All Rights Reserved</p>
+      <p class="dark" class="light">Copywrite © 2024, All Rights Reserved</p>
   </div>
 </footer>
 
 <script>
+  
+  function darkMode() {
+
+    document.querySelectorAll('body')[0].classList.toggle('body-dark-mode');
+    document.querySelectorAll('.head-link')[0].classList.toggle('head-link-dark-mode');
+
+    const HeadLinkDark = document.querySelectorAll('.head-link')
+  
+    for (let i = 0; i < HeadLinkDark.length; i++) {
+      HeadLinkDark[i].classList.toggle('head-link-dark-mode');
+    }
+
+    document.querySelectorAll('#main_nav')[0].classList.toggle('header-dark-mode');
+    document.querySelectorAll('.head-link')[0].classList.toggle('head-link-dark-mode');
+    document.querySelectorAll('h1')[0].classList.toggle('h1-dark-mode');
+
+    const h2Dark = document.querySelectorAll('h2')
+  
+    for (let i = 0; i < h2Dark.length; i++) {
+      h2Dark[i].classList.toggle('h2-dark-mode');
+    }
+
+    document.querySelectorAll('h2')[0].classList.toggle('h2-dark-mode');
+    document.querySelectorAll('h2.dark')[0].classList.toggle('h2-dark-mode');
+    document.querySelectorAll('h3')[0].classList.toggle('h3-dark-mode');
+
+    const h3Dark = document.querySelectorAll('h3')
+  
+    for (let i = 0; i < h3Dark.length; i++) {
+      h3Dark[i].classList.toggle('h3-dark-mode');
+    }
+
+    document.querySelectorAll('h3')[0].classList.toggle('h3-dark-mode');
+    document.querySelectorAll('h4')[0].classList.toggle('h4-dark-mode');
+
+    const h4Dark = document.querySelectorAll('h4')
+  
+    for (let i = 0; i < h4Dark.length; i++) {
+      h4Dark[i].classList.toggle('h4-dark-mode');
+    }
+
+    document.querySelectorAll('h4')[0].classList.toggle('h4-dark-mode');
+    document.querySelectorAll('h5')[0].classList.toggle('h5-dark-mode');
+
+    const pDark = document.querySelectorAll('p')
+  
+    for (let i = 0; i < pDark.length; i++) {
+      pDark[i].classList.toggle('p-dark-mode');
+    }
+
+    document.querySelectorAll('p')[0].classList.toggle('p-dark-mode');
+    document.querySelectorAll('p.diff-color')[0].classList.toggle('p-dark-mode');
+    document.querySelectorAll('span')[0].classList.toggle('span-skills-dark-mode');
+
+    const SpanSkillsDark = document.querySelectorAll('span')
+  
+    for (let i = 0; i < SpanSkillsDark.length; i++) {
+      SpanSkillsDark[i].classList.toggle('span-skills-dark-mode');
+    }
+
+    document.querySelectorAll('span')[0].classList.toggle('span-skills-dark-mode');
+    document.querySelectorAll('.gradient-container')[0].classList.toggle('gradient-container-dark-mode');
+
+    const GradientContainerDark = document.querySelectorAll('.gradient-container')
+  
+    for (let i = 0; i < GradientContainerDark.length; i++) {
+    GradientContainerDark[i].classList.toggle('gradient-container-dark-mode');
+    }
+   
+    document.querySelectorAll('.gradient-container')[0].classList.toggle('gradient-container-dark-mode');
+    document.querySelectorAll('#contact')[0].classList.toggle('contact-section-dark-mode');
+
+    document.querySelectorAll('#header')[0].classList.toggle('welcome-header-dark-mode');
+    document.querySelectorAll('#about')[0].classList.toggle('about-section-dark-mode');
+    document.querySelectorAll('#faqs')[0].classList.toggle('faq-section-dark-mode');
+    document.querySelectorAll('.drop-down-with-icon')[0].classList.toggle('drop-down-with-icon-dark-mode');
+
+    const FaqDropDownDark = document.querySelectorAll('.drop-down-with-icon')
+  
+    for (let i = 0; i < FaqDropDownDark.length; i++) {
+    FaqDropDownDark[i].classList.toggle('drop-down-with-icon-dark-mode');
+    }
+
+    document.querySelectorAll('.drop-down-with-icon')[0].classList.toggle('drop-down-with-icon-dark-mode');
+
+    document.querySelectorAll('.contact-form')[0].classList.toggle('contact-form-dark-mode');
+    document.querySelectorAll('p.gallery')[0].classList.toggle('p-gallery-dark-mode');
+
+    const pGalleryDark = document.querySelectorAll('p.gallery')
+  
+    for (let i = 0; i < pGalleryDark.length; i++) {
+    pGalleryDark[i].classList.toggle('p-gallery-dark-mode');
+    }
+
+    document.querySelectorAll('p.gallery')[0].classList.toggle('p-gallery-dark-mode');
+    document.querySelectorAll('h3.gallery')[0].classList.toggle('h3-gallery-dark-mode');
+
+    const h3GalleryDark = document.querySelectorAll('h3.gallery')
+  
+    for (let i = 0; i < h3GalleryDark.length; i++) {
+    h3GalleryDark[i].classList.toggle('h3-gallery-dark-mode');
+    }
+
+    document.querySelectorAll('h3.gallery')[0].classList.toggle('h3-gallery-dark-mode');
+    document.querySelectorAll('h3.dark')[0].classList.toggle('faq-text-dark-mode');
+
+    const h3FaqDark = document.querySelectorAll('h3.dark')
+  
+    for (let i = 0; i < h3FaqDark.length; i++) {
+    h3FaqDark[i].classList.toggle('faq-text-dark-mode');
+    }
+
+    document.querySelectorAll('h3.dark')[0].classList.toggle('faq-text-dark-mode');
+    document.querySelectorAll('p.dark')[0].classList.toggle('faq-text-dark-mode');
+
+    const pFaqDark = document.querySelectorAll('p.dark')
+  
+    for (let i = 0; i < pFaqDark.length; i++) {
+    pFaqDark[i].classList.toggle('faq-text-dark-mode');
+    }
+
+    document.querySelectorAll('p.dark')[0].classList.toggle('faq-text-dark-mode');
+    document.querySelectorAll('.portrait')[0].classList.toggle('portrait-dark-mode');
+    document.querySelectorAll('.mobile-menu-popout')[0].classList.toggle('mobile-menu-dark-mode');
+    document.querySelectorAll('footer')[0].classList.toggle('footer-dark-mode');
+    document.querySelectorAll('.dark-mode-button')[0].classList.toggle('dark-mode-button-2');
+
+    var img = document.getElementById("divider-4-image");
+    if (img.src.endsWith("images/pink-wavy.svg")) {
+      img.src = "images/divider-4-dark-mode.svg";
+      img.alt = "Divider 4 Dark Mode";
+    } else {
+      img.src = "images/pink-wavy.svg";
+      img.alt = "Divider 4 Light Mode"
+    }
+
+    var img = document.getElementById("divider-1-image");
+    if (img.src.endsWith("images/wavy-white.svg")) {
+      img.src = "images/divider-1-dark-mode.svg";
+      img.alt = "Divider 1 Dark Mode";
+    } else {
+      img.src = "images/wavy-white.svg";
+      img.alt = "Divider 1 Light Mode"
+    }
+
+    var img = document.getElementById("divider-2-image");
+    if (img.src.endsWith("images/pink-cream-wavy.svg")) {
+      img.src = "images/divider-2-dark-mode.svg";
+      img.alt = "Divider 2 Dark Mode";
+    } else {
+      img.src = "images/pink-cream-wavy.svg";
+      img.alt = "Divider 2 Light Mode"
+    }
+
+    var img = document.getElementById("divider-3-image");
+    if (img.src.endsWith("images/white-wavy-no-shadow.svg")) {
+      img.src = "images/divider-3-dark-mode.svg";
+      img.alt = "Divider 3 Dark Mode";
+    } else {
+      img.src = "images/white-wavy-no-shadow.svg";
+      img.alt = "Divider 3 Light Mode"
+    }
+
+    var img = document.getElementById("illustrator-image");
+    if (img.src.endsWith("images/illustrator.png")) {
+      img.src = "images/illustrator-dark-mode.png";
+      img.alt = "Illustrator Dark Mode";
+    } else {
+      img.src = "images/illustrator.png";
+      img.alt = "Illustrator Light Mode"
+    }
+
+    var img = document.getElementById("photoshop-image");
+    if (img.src.endsWith("images/photoshop.png")) {
+      img.src = "images/photoshop-dark-mode.png";
+      img.alt = "Photoshop Dark Mode";
+    } else {
+      img.src = "images/photoshop.png";
+      img.alt = "Photoshop Light Mode"
+    }
+
+    var img = document.getElementById("indesign-image");
+    if (img.src.endsWith("images/indesign.png")) {
+      img.src = "images/indesign-dark-mode.png";
+      img.alt = "Indesign Dark Mode";
+    } else {
+      img.src = "images/indesign.png";
+      img.alt = "Indesign Light Mode"
+    }
+
+    var img = document.getElementById("figma-image");
+    if (img.src.endsWith("images/figma.png")) {
+      img.src = "images/figma-dark-mode.png";
+      img.alt = "Figma Dark Mode";
+    } else {
+      img.src = "images/figma.png";
+      img.alt = "Figma Light Mode"
+    }
+
+    var img = document.getElementById("solving-image");
+    if (img.src.endsWith("images/solving.png")) {
+      img.src = "images/solving-dark-mode.png";
+      img.alt = "Problem Solving Dark Mode";
+    } else {
+      img.src = "images/solving.png";
+      img.alt = "Problem Solving Light Mode"
+    }
+
+    var img = document.getElementById("detail-image");
+    if (img.src.endsWith("images/detail-orientation.png")) {
+      img.src = "images/detail-orientation-dark-mode.png";
+      img.alt = "Detail Orientation Dark Mode";
+    } else {
+      img.src = "images/detail-orientation.png";
+      img.alt = "Detail Orientation Light Mode"
+    }
+
+    var img = document.getElementById("people-image");
+    if (img.src.endsWith("images/people.png")) {
+      img.src = "images/people-dark-mode.png";
+      img.alt = "People Dark Mode";
+    } else {
+      img.src = "images/people.png";
+      img.alt = "People Light Mode"
+    }
+
+    var img = document.getElementById("comm-image");
+    if (img.src.endsWith("images/comm.png")) {
+      img.src = "images/comm-dark-mode.png";
+      img.alt = "Communication Dark Mode";
+    } else {
+      img.src = "images/comm.png";
+      img.alt = "Communication Light Mode"
+    }
+
+  }
+
   function myMenu() {
     document.getElementById('mymenu').classList.toggle('open');
     document.getElementById('menuButton').classList.toggle('close');
@@ -516,3 +756,6 @@
 <script src="script.js"></script>
 </body>
 </html>
+
+
+
