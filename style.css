@@ -500,12 +500,15 @@ div.faq-container {
 }
 
 div.drop-down {
-    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    max-width: 850px;
+    margin-top: -10px;
 }
 
 .faq-remove-button {
     width: 45px;
-    margin-top: 20px;
+    margin-top: 5px;
 }
 
 div.drop-down-with-icon {
@@ -521,6 +524,12 @@ div.drop-down-with-icon {
     padding-right: 80px;
     gap: 80px;
     max-width: 960px;
+    height: 50px;
+    overflow: hidden;
+}
+
+.faq-open {
+    height: auto !important;
 }
 
 .drop-down-with-icon-dark-mode {

@@ -436,28 +436,28 @@
     <div class="drop-downs-container">
       <div class="drop-down-with-icon">
         <div class="drop-down">
-          <h3 class="dark">WHEN WILL YOU BE GRADUATING FROM SDSU?</h3>
+          <h3 class="dark" class="question">WHEN WILL YOU BE GRADUATING FROM SDSU?</h3>
           <p class="dark">I will be graduating from SDSU in May of 2024 with a B.A. in Advertising with a minor in Art - Graphic Design.</p>
         </div>
         <img src="images/Remove_light.svg" class="faq-remove-button" alt="Faq Collapse Button"/>
       </div>
       <div class="drop-down-with-icon">
         <div class="drop-down">
-          <h3 class="dark">WHAT DO YOU HAVE PLANNED FOR AFTER GRADUATION?</h3>
+          <h3 class="dark" class="question">WHAT DO YOU HAVE PLANNED FOR AFTER GRADUATION?</h3>
           <p class="dark">After graduation, I will be taking an exciting family trip to Japan then going back home to Maui for the summer. After that, I plan on returning to San Diego to work full-time.</p>
         </div>
         <img src="images/Remove_light.svg" class="faq-remove-button" alt="Faq Collapse Button"/>
       </div>
       <div class="drop-down-with-icon">
         <div class="drop-down">
-          <h3 class="dark">WHAT WAS YOUR FAVORITE CLASS YOU TOOK AT SDSU?</h3>
+          <h3 class="dark" class="question">WHAT WAS YOUR FAVORITE CLASS YOU TOOK AT SDSU?</h3>
           <p class="dark">My favorite class I took at SDSU is Self Defense for Women. In this class we learn the different ways to defend ourselves in the different situations we may find ourselves in. Learning all of the different techniques and practicing it with your classmates was so much fun, especially since the environment was so welcoming and empowering. I would say that my favorite technique that I learned was a hip throw.</p>
         </div>
         <img src="images/Remove_light.svg" class="faq-remove-button" alt="Faq Collapse Button"/>
       </div>
       <div class="drop-down-with-icon">
         <div class="drop-down">
-          <h3 class="dark">WHAT WORK ARE YOU MOST PROUD PRODUCING AT SDSU?</h3>
+          <h3 class="dark" class="question">WHAT WORK ARE YOU MOST PROUD PRODUCING AT SDSU?</h3>
           <p class="dark">The work that I'm most proud of producing at SDSU is my "Kaiāulu" project from Typography II. Even though this project was extremely stressful and brought a lot of challenges with print vs online, I learned so much about the different programs I was using and overcame those challenges. This project pushed me and helped me grow as a designer.</p>
         </div>
         <img src="images/Remove_light.svg" class="faq-remove-button" alt="Faq Collapse Button"/>
@@ -510,6 +510,12 @@
 
 <script>
   
+  const faqToggle = document.querySelectorAll('.drop-down-with-icon')
+
+  for (let i = 0; i < faqToggle.length; i++) {
+    faqToggle[i].addEventListener("click", function() { this.classList.toggle('faq-open') });
+  }
+
   function darkMode() {
 
     document.querySelectorAll('body')[0].classList.toggle('body-dark-mode');
