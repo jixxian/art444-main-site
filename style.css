@@ -506,8 +506,19 @@ div.drop-down {
     margin-top: -10px;
 }
 
-.faq-remove-button {
+.faq-plus-button {
+    background-image: url(images/faq-plus-button.svg);
+    height: 45px;
     width: 45px;
+    margin-top: 5px;
+    background-repeat: no-repeat;
+}
+
+.faq-remove-button {
+    background-image: url(images/Remove_light.svg);
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 100px;
     margin-top: 5px;
 }
 
@@ -523,7 +534,7 @@ div.drop-down-with-icon {
     padding-bottom: 30px;
     padding-right: 80px;
     gap: 80px;
-    max-width: 960px;
+    max-width: 1000px;
     height: 50px;
     overflow: hidden;
 }
