@@ -515,10 +515,10 @@ div.drop-down {
 }
 
 .faq-remove-button {
-    background-image: url(images/Remove_light.svg);
+    background-image: url(images/Close_round2.svg);
     background-repeat: no-repeat;
-    height: 100px;
-    width: 100px;
+    height: 45px;
+    width: 45px;
     margin-top: 5px;
 }
 
