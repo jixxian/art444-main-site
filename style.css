@@ -46,6 +46,7 @@ a.head-link {
     background-position: 50% 50%;
     z-index: 999;
     display: none;
+    cursor: pointer;
 }
 
 .mobile-menu-popout {
@@ -70,14 +71,20 @@ a.head-link {
     background-image: url(images/current-light-mode-button.svg);
     background-repeat: no-repeat;
     z-index: 997;
+    cursor: pointer;
 }
 
 .dark-mode-button-2 {
     background-image: url(images/current-dark-mode-button.svg);
+    cursor: pointer;
 }
 
 .mobile-menu-dark-mode {
-    background-color: #FBF9F8 !important;
+    background-image: url(images/Menu-dark.svg);
+    background-repeat: no-repeat;
+    width: 36px;
+    height: 36px;
+    position: fixed;
 }
 
 .open {
@@ -127,13 +134,13 @@ body {
     background-size: 500px, 300px;
 }
 
-.header-image-dark {
+/* .header-image-dark {
     background-image: url(images/light-pink-leaf.svg), url(images/cream-leaf-sparkle.svg);
     background-repeat: no-repeat;
     background-position-x: -100px, right;
     background-position-y: -50px, 350px;
     background-size: 500px, 300px;
-}
+} */
 
 h1 {
     font-family: 'BetterYesterday';
@@ -406,7 +413,7 @@ div.individual {
     top: 0;
 }
 
-#next, #prev {
+.next-button {
     position: absolute;
     top: 40%;
     color: #653603;
@@ -417,11 +424,30 @@ div.individual {
     font-weight: normal;
     left: 50px;
     cursor: pointer;
+    z-index: 994;
+}
+
+.prev-button {
+    position: absolute;
+    top: 40%;
+    color: #653603;
+    background-color: transparent;
+    border: none;
+    font-size: xxx-large;
+    font-family: Montserrat;
+    font-weight: normal;
+    left: 50px;
+    cursor: pointer;
+    z-index: 995;
 }
 
 #next {
     left: unset;
     right: 50px;
+}
+
+.button-dark-mode {
+    color: #F9F5E7;
 }
 
 .gradient-container-dark-mode {
@@ -597,14 +623,15 @@ div.drop-down {
 }
 
 .faq-plus-button {
-    background-image: url(images/faq-plus-button.svg);
+    /* background-image: url(images/faq-plus-button.svg); */
     height: 45px;
     width: 45px;
     margin-top: 5px;
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
     transform: rotate(0);
     transform-origin: center;
     transition: 0.3s linear;
+    cursor: pointer;
 }
 
 .faq-remove-button {

@@ -101,14 +101,21 @@
         max-width: 492px;
         align-items: center;
         margin: 0 auto;
+        height: 100%;
     }
 
     div.gradient-container {
         align-items: center;
+        width: 400px;
+        height: 100%;
     }
 
     .project_context {
         text-align: center;
+    }
+
+    .gallery-container {
+        height: 820px;
     }
 
     div.carousel-container {
@@ -147,6 +154,10 @@
         align-items: center;
     }
 
+    .image {
+        width: 350px;
+    }
+
     div.skill-group2 {
         display: flex;
         flex-wrap: wrap;
@@ -174,6 +185,10 @@
 
     .drop-downs-container {
         margin-top: -100px;
+    }
+
+    .drop-down-with-icon {
+        height: auto;
     }
 
     section#contact {
@@ -287,11 +302,11 @@
     }
 
     .image {
-        width: 200px;
+        width: 100px;
     }
 
     div.gradient-container {
-        max-width: 329px;
+        max-width: 200px;
         padding: 30px;
     }
 
@@ -326,7 +341,6 @@
         flex-direction: column;
         align-items: center;
         text-align: center;
-        margin: -50px auto;
         margin-bottom: 0px;
     }
 
@@ -398,6 +412,7 @@
         gap: 20px;
         padding-left: 40px;
         padding-right: 40px;
+        height: 60px;
     }
 
     section#contact {
